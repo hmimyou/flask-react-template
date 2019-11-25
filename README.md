@@ -7,6 +7,6 @@
 * [React Tutorial](https://reactjs.org/tutorial/tutorial.html)
 
 ## TODO:
-[ ] Add React Tutorial example
-[ ] Add sass support
-[ ] Add Redux support
+- [ ] Add React Tutorial example
+- [ ] Add sass support
+- [ ] Add Redux support
