@@ -5,7 +5,12 @@ from flask import Flask, render_template
 
 def create_app(test_config=None):
     template_dir = os.path.abspath('client/dist')
-    app = Flask(__name__, instance_relative_config=True,  template_folder=template_dir, static_url_path='', static_folder=template_dir)
+    app = Flask(__name__,
+        instance_relative_config=True,
+        template_folder=template_dir,
+        static_url_path='',
+        static_folder=template_dir
+    )
     app.config.from_mapping(
         SECRET_KEY='dev',
         DATABASE=os.path.join(app.instance_path, 'server.sqlite'),
