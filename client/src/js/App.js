@@ -8,6 +8,9 @@ class App extends Component {
 		return(
 			<div className="App">
 				<h2>Tic Tac Toe</h2>
+				<div className="section-reference">
+					<a href="https://reactjs.org/tutorial/tutorial.html">Reference: React Tutorial</a>
+				</div>
 				<Game />
 			</div>
 		)

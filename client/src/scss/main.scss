@@ -72,3 +72,10 @@ body {
 .game-info {
   margin-left: 20px;
 }
+
+.section-reference {
+  margin-bottom: 20px;
+  a {
+    color: $color-border;
+  }
+}
