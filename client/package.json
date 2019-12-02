@@ -5,7 +5,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rm -rf dist",
-    "build": "npm run clean && mkdir dist && webpack && cp src/index.html dist/index.html"
+    "cp-static-assets": "cp src/index.html dist/index.html && cp -R src/static dist",
+    "build": "npm run clean && mkdir dist && webpack && npm run cp-static-assets"
   },
   "author": "",
   "license": "ISC",

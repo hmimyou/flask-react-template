@@ -1,5 +1,8 @@
 # Scaffolding of a simple web server using Flask + React
 
+## Get Started:
+`make build && make run`
+
 ## Reference:
 * [Flask](https://flask.palletsprojects.com/en/1.1.x/tutorial/factory/)
 * [Creating a React App From Scratch](https://blog.usejournal.com/creating-a-react-app-from-scratch-f3c693b84658)
@@ -12,3 +15,4 @@
 - [x] Add React Tutorial example
 - [x] Add scss support
 - [ ] Add Redux support
+- [ ] Add dependencies spec (python and JS)
