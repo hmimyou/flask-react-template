@@ -11,6 +11,10 @@
   "author": "",
   "license": "ISC",
   "private": true,
+  "engines": {
+    "node": "^6.11.4",
+    "npm": "^3.10.10"
+  },
   "devDependencies": {
     "@babel/cli": "^7.1.0",
     "@babel/core": "^7.1.0",

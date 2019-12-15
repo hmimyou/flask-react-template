@@ -15,4 +15,4 @@
 - [x] Add React Tutorial example
 - [x] Add scss support
 - [ ] Add Redux support
-- [ ] Add dependencies spec (python and JS)
+- [x] Add dependencies spec (python and JS)
