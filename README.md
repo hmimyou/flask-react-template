@@ -14,5 +14,6 @@
 ## TODO:
 - [x] Add React Tutorial example
 - [x] Add scss support
-- [ ] Add Redux support
+- [x] Add Redux support
 - [x] Add dependencies spec (python and JS)
+- [ ] Add Docker support
