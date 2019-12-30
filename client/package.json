@@ -2,11 +2,18 @@
   "name": "client",
   "version": "1.0.0",
   "description": "",
+  "watch": {
+    "build": {
+      "patterns": ["src"],
+      "extensions": "js,css,html,scss"
+    }
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rm -rf dist",
     "cp-static-assets": "cp src/index.html dist/index.html && cp -R src/static dist",
-    "build": "npm run clean && mkdir dist && webpack && npm run cp-static-assets"
+    "build": "npm run clean && mkdir dist && webpack && npm run cp-static-assets",
+    "watch": "npm-watch"
   },
   "author": "",
   "license": "ISC",
@@ -23,6 +30,7 @@
     "babel-loader": "^8.0.2",
     "css-loader": "^1.0.0",
     "node-sass": "^4.13.0",
+    "npm-watch": "^0.6.0",
     "sass-loader": "^7.3.1",
     "style-loader": "^0.23.0",
     "webpack": "^4.19.1",

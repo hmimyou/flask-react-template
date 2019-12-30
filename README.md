@@ -1,7 +1,8 @@
 # Scaffolding of a simple web server using Flask + React
 
 ## Get Started:
-`make build && make run`
+`make run-server`
+`make watch-client`
 
 ## Reference:
 * [Flask](https://flask.palletsprojects.com/en/1.1.x/tutorial/factory/)
