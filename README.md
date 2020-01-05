@@ -11,10 +11,12 @@
 * [A beginer's guide to Webpack 2](https://medium.com/a-beginners-guide-for-webpack-2)
 * [React Tutorial](https://reactjs.org/tutorial/tutorial.html)
 * [Using SASS](https://medium.com/a-beginners-guide-for-webpack-2/using-sass-9f52e447c5ae)
+* [React Router](https://reacttraining.com/react-router/web/guides/quick-start)
 
 ## TODO:
 - [x] Add React Tutorial example
 - [x] Add scss support
 - [x] Add Redux support
-- [x] Add dependencies spec (python and JS)
+- [x] Add react-router support
 - [ ] Add Docker support
+- [ ] Add dependencies spec (python and JS)

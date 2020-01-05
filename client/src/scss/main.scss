@@ -24,6 +24,29 @@ body {
   }
 }
 
+.nav {
+  margin: 20px 0;
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+
+    li {
+      margin: 10px 0;
+      display: inline-block;
+      padding-right: 20px;
+
+      a {
+        color: $color-header;
+        text-decoration: none;
+      }
+      a:hover, .selected {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
 
 .board-row {
   &:after {
