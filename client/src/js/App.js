@@ -1,9 +1,8 @@
-import React, { Component } from 'react'
-import '../css/app.css'
-import '../scss/main.scss'
+import React from 'react'
+import { NavLink, Route, Switch } from 'react-router-dom'
 import Game from './react-game/components/Game'
 import TodoListApp from './todo-list/components/TodoListApp'
-import { NavLink, Route, Switch } from 'react-router-dom'
+import {default as RedditApiApp } from './reddit-api/App'
 
 const App = () => (
 	<div>
@@ -22,6 +21,11 @@ const App = () => (
 				<li>
 					<NavLink to="/todo-list" activeClassName="selected">
 						TODO List
+					</NavLink>
+				</li>
+				<li>
+					<NavLink to="/reddit-api" activeClassName="selected">
+						Reddit API
 					</NavLink>
 				</li>
 			</ul>
@@ -44,6 +48,15 @@ const App = () => (
 						<a href="https://redux.js.org/basics/basic-tutorial">Reference: Redux Tutorial</a>
 					</div>
 					<TodoListApp />
+				</div>
+			</Route>
+			<Route path="/reddit-api">
+				<div className="sub-app">
+					<h2>Reddit API Demo</h2>
+					<div className="section-reference">
+						<a href="https://redux.js.org/advanced/advanced-tutorial">Reference: Redux Advanced Tutorial</a>
+					</div>
+					<RedditApiApp />
 				</div>
 			</Route>
 		</Switch>
