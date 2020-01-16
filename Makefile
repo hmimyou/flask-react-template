@@ -6,3 +6,6 @@ watch-client:
 
 build-client:
 	cd client && npm run build && cd ..
+
+install-client:
+	cd client && npm install && cd ..
