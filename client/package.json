@@ -21,8 +21,8 @@
   "license": "ISC",
   "private": true,
   "engines": {
-    "node": "^6.11.4",
-    "npm": "^3.10.10"
+    "node": "^18.16.0",
+    "npm": "^9.5.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.1.0",
@@ -30,13 +30,13 @@
     "@babel/preset-env": "^7.1.0",
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.2",
-    "css-loader": "^1.0.0",
-    "node-sass": "^4.13.0",
-    "npm-watch": "^0.6.0",
-    "sass-loader": "^7.3.1",
-    "style-loader": "^0.23.0",
-    "webpack": "^4.41.5",
-    "webpack-cli": "^3.1.1"
+    "css-loader": "^6.7.3",
+    "node-sass": "^8.0.0",
+    "npm-watch": "^0.11.0",
+    "sass-loader": "^13.2.2",
+    "style-loader": "^3.3.2",
+    "webpack": "^5.82.1",
+    "webpack-cli": "^5.1.1"
   },
   "dependencies": {
     "babel-polyfill": "^6.26.0",
