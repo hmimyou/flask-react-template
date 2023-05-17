@@ -1,6 +1,6 @@
 import os
 
-from flask import Flask, render_template
+from flask import Flask, render_template, jsonify
 
 
 def create_app(test_config=None):
@@ -34,5 +34,10 @@ def create_app(test_config=None):
     @app.route('/')
     def index():
         return render_template('index.html')
+
+
+    @app.route('/dummy-get/<ping>', methods=['GET'])
+    def dummy_get(ping):
+        return jsonify({"pong": ping})
 
     return app

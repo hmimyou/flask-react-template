@@ -2,6 +2,7 @@ import React from 'react'
 import { NavLink, Route, Switch } from 'react-router-dom'
 import Game from './react-game/components/Game'
 import TodoListApp from './todo-list/components/TodoListApp'
+import AxiosPlayGround from './axios-demo/components/AxiosPlayGround'
 import {default as RedditApiApp } from './reddit-api/App'
 
 const App = () => (
@@ -26,6 +27,11 @@ const App = () => (
 				<li>
 					<NavLink to="/reddit-api" activeClassName="selected">
 						Reddit API
+					</NavLink>
+				</li>
+				<li>
+					<NavLink to="/axios-demo" activeClassName="selected">
+						Axios Demo
 					</NavLink>
 				</li>
 			</ul>
@@ -57,6 +63,15 @@ const App = () => (
 						<a href="https://redux.js.org/advanced/advanced-tutorial">Reference: Redux Advanced Tutorial</a>
 					</div>
 					<RedditApiApp />
+				</div>
+			</Route>
+			<Route path="/axios-demo">
+				<div className="sub-app">
+					<h2>Axios Demo</h2>
+					<div className="section-reference">
+						<a href="https://github.com/axios/axios#example">Reference: Axios GitHub Page</a>
+					</div>
+					<AxiosPlayGround />
 				</div>
 			</Route>
 		</Switch>
