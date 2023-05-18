@@ -2,7 +2,8 @@ import React from 'react'
 import { NavLink, Route, Switch } from 'react-router-dom'
 import Game from './react-game/components/Game'
 import TodoListApp from './todo-list/components/TodoListApp'
-import AxiosPlayGround from './axios-demo/components/AxiosPlayGround'
+import UsefulUtils from './useful-utils/components/UsefulUtils'
+import UsefulLayouts from './useful-layouts/components/UsefulLayouts'
 import {default as RedditApiApp } from './reddit-api/App'
 
 const App = () => (
@@ -30,8 +31,13 @@ const App = () => (
 					</NavLink>
 				</li>
 				<li>
-					<NavLink to="/axios-demo" activeClassName="selected">
-						Axios Demo
+					<NavLink to="/useful-utils" activeClassName="selected">
+						Useful Utilities
+					</NavLink>
+				</li>
+				<li>
+					<NavLink to="/useful-layouts" activeClassName="selected">
+						Useful Layouts
 					</NavLink>
 				</li>
 			</ul>
@@ -65,13 +71,16 @@ const App = () => (
 					<RedditApiApp />
 				</div>
 			</Route>
-			<Route path="/axios-demo">
+			<Route path="/useful-utils">
 				<div className="sub-app">
-					<h2>Axios Demo</h2>
-					<div className="section-reference">
-						<a href="https://github.com/axios/axios#example">Reference: Axios GitHub Page</a>
-					</div>
-					<AxiosPlayGround />
+					<h2>Useful Utilities</h2>
+					<UsefulUtils />
+				</div>
+			</Route>
+			<Route path="/useful-layouts">
+				<div className="sub-app">
+					<h2>Useful Layouts</h2>
+					<UsefulLayouts />
 				</div>
 			</Route>
 		</Switch>

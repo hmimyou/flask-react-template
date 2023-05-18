@@ -39,9 +39,12 @@ body {
       a {
         color: $color-header;
         text-decoration: none;
+        padding: 10px 0;
       }
       a:hover, .selected {
-        text-decoration: underline;
+        // font-weight: bold; /* if tab in English, this will make the tab flicky when hover; for some reason Chinese is ok*/
+        border-bottom-style: solid;
+        border-bottom-width: medium;
       }
     }
   }
@@ -100,5 +103,23 @@ body {
   margin-bottom: 20px;
   a {
     color: $color-border;
+  }
+}
+
+.split-panel {
+  display: flex;
+  background-color: #107baf;
+  padding: 15px;
+  min-height: 20vh; /* 20% Viewport height */
+
+  .left-panel {
+    width: 200px;  /* Set the fixed width here */
+    background-color: #e28743;
+    min-height: 50px;
+  }
+  .right-panel {
+    flex-grow: 1;  /* Grow to take up remaining space */
+    background-color: #eab676;
+    min-height: 50px;
   }
 }

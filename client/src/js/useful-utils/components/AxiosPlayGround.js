@@ -46,11 +46,13 @@ class AxiosPlayGround extends Component {
         </button>
         <div>Pinged {this.state.serialNum} once. </div>
         <div>Status: {this.state.status}</div>
-        <div>Pongs: 
+        <div>Pongs:
+          <pre>
           {this.state.pongs.map(pong=>(
             <div key={pong.serialNum}>{pong.serialNum}: {pong.pong}</div>
-          )
-        )}</div>
+          ))}
+          </pre>
+        </div>
       </div>
     );
   }
