@@ -6,11 +6,12 @@
 2. flask
 
 ## Get Started:
-`make run-server` # run the server in dev mode
-
-`make install-client` # in a separate terminal
-`make build-client`
-`make watch-client`   # watch client side code for re-compile
+```
+	make install-client # for the first time installation
+	make build-client   # re-compile frontend resources once if not using watch-client
+	make run-server     # run the server in dev mode (auto reload)
+	make watch-client   # watch client side code for auto re-compile
+```
 
 Go to localhost:5001
 
